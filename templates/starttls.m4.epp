@@ -1,10 +1,6 @@
 dnl #
 dnl # TLS
 dnl #
-<% if $include_starttls_m4 { -%>
-include(`/etc/mail/tls/starttls.m4')dnl
-dnl #
-<% } -%>
 <% if $ca_cert_file { -%>
 define(`confCACERT', `<%= $ca_cert_file -%>')dnl
 <% } -%>
